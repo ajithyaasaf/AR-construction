@@ -77,8 +77,8 @@ a:focus {
 /**********************************/
 .top-bar {
     position: relative;
-    height: 18px;
-    background: #030f27;
+    height: 90px;
+    background: #fdbe33;
 }
 
 .top-bar .logo {
@@ -153,7 +153,7 @@ a:focus {
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-/* .nav-bar {
+.nav-bar {
     position: relative;
     background: #fdbe33;
     transition: .3s;
@@ -174,7 +174,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #ffffff !important;
+    background: #030f27 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -182,7 +182,7 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -210,8 +210,6 @@ a:focus {
     border-color: #fdbe33;
 }
 
-
-
 @media (min-width: 992px) {
     .nav-bar {
         padding: 0 75px;
@@ -224,11 +222,12 @@ a:focus {
     .nav-bar .navbar {
         padding: 20px;
     }
-     */
-    /* Remove this line to make the logo visible on desktop */
-    /* .nav-bar .navbar-brand { display: none; } */
     
-   /*  .nav-bar a.nav-link {
+    .nav-bar .navbar-brand {
+        display: none;
+    }
+    
+    .nav-bar a.nav-link {
         padding: 8px 15px;
         font-size: 15px;
         text-transform: uppercase;
@@ -251,227 +250,9 @@ a:focus {
     .nav-bar .btn {
         display: none;
     }
-} */
+}
 
-  
-  /* Nav test */
-     /* Custom Navbar Styles */
- /* Custom Navbar Styles */
- 
-    /* Custom Navbar Styles */
-    .navbar {
-        background-color: #fdbe33; /* Navbar background color */
-        padding: 0.5rem 1rem;
-      }
-      
-      .navbar-brand img {
-        height: 100px; /* Increased logo size */
-        width: auto; /* Maintain aspect ratio by allowing width to adjust automatically */
-      }
-      
-      
-      .navbar-nav {
-        flex-grow: 1;
-        justify-content: center; /* Center the menu items */
-      }
-      
-      .navbar-nav .nav-link {
-        color: #030f27; /* Dark blue for the list items */
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 0.5rem 1rem;
-      }
-      
-      .navbar-nav .nav-link:hover,
-      .navbar-nav .nav-link.active {
-        color: #fff;
-        background-color: #030f27; /* Dark blue on hover and active */
-        border-radius: 5px;
-      }
-      
-      .navbar-toggler {
-        border: none;
-      }
-      
-      .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23030f27" viewBox="0 0 24 24"%3E%3Cpath d="M3 6h18a1 1 0 110 2H3a1 1 0 010-2zm0 7h18a1 1 0 110 2H3a1 1 0 010-2zm0 7h18a1 1 0 110 2H3a1 1 0 010-2z"/%3E%3C/svg%3E'); /* Dark blue hamburger icon */
-      }
-      
-      @media (max-width: 991.98px) {
-        .navbar-nav {
-          text-align: center;
-          margin-top: 1rem;
-        }
-      
-        .navbar-nav .nav-item {
-          margin-bottom: 0.5rem;
-        }
-      }
-      /* tets 2 */
-/* Base Navbar Styles */
-.navbar {
-    background-color: #fdbe33; /* Navbar background color */
- max-height: 100px;
-    position: sticky; /* Make navbar sticky */
-    top: 0; /* Position it at the top of the page when scrolled */
-    z-index: 1000; /* Ensure navbar stays on top of other content */
-    width: 100%; /* Ensure the navbar takes full width */
-    display: flex;
-    justify-content: space-between; /* Ensure logo and menu are on opposite sides */
-    align-items: center; /* Center content vertically */
-    padding-right: 200px; /* For larger screens, keep padding-right as 200px */
-  }
-  
-  /* Logo Wrapper */
-  .logo-wrapper {
-    height: 120px; /* Fixed height for the logo wrapper */
-    display: flex;
-    justify-content: center; /* Center the logo horizontally */
-    align-items: center; /* Center the logo vertically */
-  }
-  
-  .navbar-brand img {
-    height: 200%; /* Make the logo fill the height of the wrapper */
-    width: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Navbar Links */
-  .navbar-nav {
-    flex-grow: 1;
-    justify-content: center; /* Center the menu items */
-    display: flex; /* Ensure the navbar items stay inline */
-  }
-  
-  .navbar-nav.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #030f27; /* Dark blue for the list items */
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-     margin-right: 20px; 
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    color: #fff;
-    background-color: #030f27; /* Dark blue on hover and active */
-    border-radius: 5px;
-  }
-  
-  /* Hamburger Icon */
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23030f27" viewBox="0 0 24 24"%3E%3Cpath d="M3 6h18a1 1 0 110 2H3a1 1 0 010-2zm0 7h18a1 1 0 110 2H3a1 1 0 010-2zm0 7h18a1 1 0 110 2H3a1 1 0 010-2z"/%3E%3C/svg%3E'); /* Dark blue hamburger icon */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 1200px) {
-    .navbar {
-      padding-right: 150px; /* Reduce padding-right on medium-sized screens */
-    }
-  
-    .logo-wrapper {
-      height: 100px; /* Slightly smaller logo height on medium screens */
-    }
-  
-    .navbar-brand img {
-      height: 200%; /* Logo size for larger screens */
-    }
-  }
-  
-  @media (max-width: 991.98px) {
-    .navbar-nav {
-      flex-direction: column;
-      text-align: center;
-      margin-top: 1rem;
-    }
-  
-    .navbar-nav .nav-item {
-      margin-bottom: 0.5rem;
-    }
-  
-    .logo-wrapper {
-      height: 90px; /* Smaller logo wrapper for tablets */
-    }
-  
-    .navbar-brand img {
-      height: 200%; /* Keep the logo size consistent across tablets */
-    }
-  
-    .navbar-toggler {
-      display: block; /* Show hamburger icon */
-    }
-  
-    .navbar {
-      padding-right: 100px; /* Reduce padding-right for tablets */
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .navbar {
-      padding-right: 50px; /* Further reduce padding-right for mobile screens */
-    }
-  
-    .logo-wrapper {
-      height: 80px; /* Smaller logo wrapper height */
-    }
-  
-    .navbar-brand img {
-      height: 200%; /* Keep logo size consistent for phones */
-    }
-  
-    .navbar-nav {
-      flex-direction: column;
-      text-align: center;
-      margin-top: 1rem;
-      width: 100%; /* Full width for the navbar items */
-    }
-  
-    .navbar-nav .nav-item {
-      margin-bottom: 0.5rem;
-    }
-  
-    .navbar-toggler {
-      display: block; /* Show hamburger icon */
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .navbar {
-      padding-right: 20px; /* Further reduce padding-right on very small screens */
-    }
-  
-    .logo-wrapper {
-      height: 70px; /* Smaller logo wrapper height */
-    }
-  
-    .navbar-brand img {
-      height: 200%; /* Keep logo size consistent for very small screens */
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 14px; /* Smaller text for smaller screens */
-      padding: 0.5rem 0.75rem; /* Adjust padding */
-      margin-right: 0px;
-    }
-  
-    .navbar-toggler {
-      display: block; /* Show hamburger icon */
-    }
-  }
-  
-      
-      
-      
+
 /*******************************/
 /******** Carousel CSS *********/
 /*******************************/
@@ -2282,7 +2063,8 @@ a:focus {
 }
 
 .footer .footer-contact,
-.footer .footer-link {
+.footer .footer-link,
+.footer .newsletter {
     position: relative;
     margin-bottom: 45px;
 }
@@ -2360,6 +2142,39 @@ a:focus {
     color: #030f27;
 }
 
+.footer .newsletter .form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.footer .newsletter input {
+    height: 50px;
+    border: 2px solid #121518;
+    border-radius: 0;
+}
+
+.footer .newsletter .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fdbe33;
+    background: #121518;
+    border-radius: 0;
+    border: 2px solid #fdbe33;
+    transition: .3s;
+}
+
+.footer .newsletter .btn:hover {
+    color: #121518;
+    background: #fdbe33;
+}
+
 .footer .footer-menu .f-menu {
     position: relative;
     padding: 15px 0;
@@ -2386,6 +2201,7 @@ a:focus {
     padding-right: 0;
     border-right: none;
 }
+
 
 .footer .copyright {
     padding: 30px 15px;
@@ -2417,5 +2233,3 @@ a:focus {
         text-align: center;
     }
 }
-
-
