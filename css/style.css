@@ -312,7 +312,7 @@ a:focus {
 /* Base Navbar Styles */
 .navbar {
     background-color: #fdbe33; /* Navbar background color */
- max-height: 100px;
+    padding: 0.1rem 0.1rem; /* Adjust padding to keep navbar height consistent */
     position: sticky; /* Make navbar sticky */
     top: 0; /* Position it at the top of the page when scrolled */
     z-index: 1000; /* Ensure navbar stays on top of other content */
