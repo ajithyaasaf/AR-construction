@@ -331,7 +331,7 @@ a:focus {
     display: flex;
     justify-content: space-between; /* Ensure logo and menu are on opposite sides */
     align-items: center; /* Center content vertically*/
-    padding-right: 200px; /* For larger screens, keep padding-right as 200px */
+    padding-right: 200px; /* For larger screens, keep padding-right as 200p */
     border-bottom: 5px solid #fdbe2f; 
 }
   
