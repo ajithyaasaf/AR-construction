@@ -340,14 +340,14 @@ a:focus {
 
   /* Logo Wrapper */
   .logo-wrapper {
-    height: 120px; /* Fixed height for the logo wrapper */
+    height: 100px; /* Fixed height for the logo wrapper */
     display: flex;
     justify-content: center; /* Center the logo horizontally */
     align-items: center; /* Center the logo vertically */
   }
   
   .navbar-brand img {
-    height: 250%; /* Make the logo fill the height of the wrapper */
+    height: 300%; /* Make the logo fill the height of the wrapper */
     width: auto; /* Maintain aspect ratio */
   }
   
