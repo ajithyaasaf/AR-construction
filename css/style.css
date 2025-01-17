@@ -322,7 +322,7 @@ a:focus {
       /* tets 2 */
 /* Base Navbar Styles */
 .navbar {
-    background-color: #fdbe33; /* Navbar background color */
+    background-color: #ffffff; /* Navbar background color */
     padding: 0.1rem 0.1rem; /* Adjust padding to keep navbar height consistent */
     position: sticky; /* Make navbar sticky */
     top: 0; /* Position it at the top of the page when scrolled */
@@ -330,9 +330,11 @@ a:focus {
     width: 100%; /* Ensure the navbar takes full width */
     display: flex;
     justify-content: space-between; /* Ensure logo and menu are on opposite sides */
-    align-items: center; /* Center content vertically */
+    align-items: center; /* Center content vertically*/
     padding-right: 200px; /* For larger screens, keep padding-right as 200px */
-  }
+    border-bottom: 5px solid #fdbe2f; 
+}
+  
   
 
 
@@ -503,7 +505,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 70px);
     min-height: 400px;
     margin: 0 auto;
     text-align: center;
