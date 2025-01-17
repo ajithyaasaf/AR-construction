@@ -1,1 +1,22 @@
 #030f27 dark blue
+
+
+old building repair and renovation work
+Apartment Development
+waterproofing solution for new and old buildings
+Commercial Development
+Industrial Development
+Individual Villa Development
+Joint Venture Development
+Residential Development
+corporate Office Development
+Construction Consultancy
+
+ <div class="footer-link">
+                    <h2>Services Areas</h2>
+                    <a href="">Apartment Development</a>
+                    <a href="">Commercial Development</a>
+                    <a href="">Industrial Development</a>
+                    <a href="">Individual Villa Development</a>
+                    <a href="">Joint Venture Development</a>
+                </div>

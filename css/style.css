@@ -258,6 +258,17 @@ a:focus {
      /* Custom Navbar Styles */
  /* Custom Navbar Styles */
  
+
+
+
+
+
+
+
+
+
+
+
     /* Custom Navbar Styles */
     .navbar {
         background-color: #fdbe33; /* Navbar background color */
@@ -323,6 +334,8 @@ a:focus {
     padding-right: 200px; /* For larger screens, keep padding-right as 200px */
   }
   
+
+
   /* Logo Wrapper */
   .logo-wrapper {
     height: 120px; /* Fixed height for the logo wrapper */
@@ -332,10 +345,12 @@ a:focus {
   }
   
   .navbar-brand img {
-    height: 200%; /* Make the logo fill the height of the wrapper */
+    height: 250%; /* Make the logo fill the height of the wrapper */
     width: auto; /* Maintain aspect ratio */
   }
   
+
+
   /* Navbar Links */
   .navbar-nav {
     flex-grow: 1;
@@ -472,6 +487,16 @@ a:focus {
       
       
       
+
+
+
+
+
+
+
+
+
+
 /*******************************/
 /******** Carousel CSS *********/
 /*******************************/
