@@ -168,8 +168,64 @@
                 </div>
             </div>
         <!-- About End -->
-            
-            
+            <!-- about timeline -->
+            <section class="timeline-section">
+                <div class="container">
+                    <h2 class="section-title">Our Journey</h2>
+                    <p class="section-subtitle">Building the Future, One Step at a Time</p>
+        
+                    <div class="timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="icons/foundation.png" alt="Foundation Icon">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2005 - Foundation</h3>
+                                <p>AR Dream Construction was founded with a vision to revolutionize the construction industry through innovation and quality.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="icons/project.png" alt="Project Icon">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2010 - First Major Project</h3>
+                                <p>We completed our first major project, a state-of-the-art commercial complex, setting new standards in construction.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="icons/sustainability.png" alt="Sustainability Icon">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2015 - Sustainability Focus</h3>
+                                <p>We adopted green building practices, ensuring eco-friendly and sustainable construction methods.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Timeline Item 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="icons/recognition.png" alt="Recognition Icon">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>2020 - National Recognition</h3>
+                                <p>AR Dream Construction was recognized as one of the top 10 construction companies in the country.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+
+
+
+
             <!-- Fact Start -->
            <!--  <div class="fact">
                 <div class="container-fluid">
@@ -451,6 +507,22 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> 
        <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
+        <script>// Add Intersection Observer for animations
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                },
+                { threshold: 0.5 }
+            );
+            
+            timelineItems.forEach((item) => {
+                observer.observe(item);
+            });</script>
     </body>
 </html>
