@@ -1,13 +1,18 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
-body {
-    color: #666666;
-    background: #dddddd;
+
+/* Reset default margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-}
-
+    color: #666666;
+    background: #dddddd;
+  }
 h1,
 h2, 
 h3, 
@@ -2489,7 +2494,7 @@ video {
 
 
 /* timeline css */
-.containerr {
+.timeline-container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -2661,7 +2666,7 @@ video {
     text-align: center;
   }
 
-  .container {
+  .section-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
