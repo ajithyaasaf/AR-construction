@@ -21,10 +21,54 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
         <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <link href="lib/slick/slick-theme.css" rel="stylesheet">
-
+   
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Portfolio Section Background & Spacing */
+.portfolio-section {
+  background-color: #f8f9fa;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #6c757d;
+}
+
+/* Portfolio Card Image Styling */
+.portfolio-item img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+.portfolio-item .btn {
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-item .btn:hover {
+  background-color: #0056b3;
+}
+
+
+        </style>
     </head>
 
     <body>
@@ -140,128 +184,98 @@
             <!-- Page Header End -->
 
 
-            <!-- Portfolio Start -->
-            <div class="portfolio">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <p>Our Projects</p>
-                        <h2>Visit Our Projects</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <!-- <li data-filter=".first">Complete</li>
-                                <li data-filter=".second">Running</li>
-                                <li data-filter=".third">Upcoming</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row portfolio-container">
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-1.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            This is the Ooratchi Aluvulagam (Village Administration Office) in Pillayarkulam, near Virudhunagar	, Tamil Nadu.It's a key building for local government services and community gatherings.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-2.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            Located in Appanur Chatrapatti, the Anganwadi Center is constructed with various educational and healthcare facilities to lay the foundation for the growth of rural children.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-3.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            We completed this reinforced concrete structure, showcasing clean lines and precise formwork.  The window openings were carefully integrated into the design.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-4.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            This project demonstrates our expertise in working with reinforced concrete.  The solid and durable structure will serve its purpose well.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-5.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>
-                                            We successfully delivered this residential project, featuring a robust concrete structure and well-defined window openings.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="portfolio-warp">
-                                <div class="portfolio-img">
-                                    <img src="img/portfolio-6.jpg" alt="Image">
-                                    <div class="portfolio-overlay">
-                                        <p>A building's concrete framework is nearing completion.  The structure features defined window openings and a prominent tower element.  The image captures a snapshot of the construction process.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-text">
-                                    <h3>Project Name</h3>
-                                    <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  <!--   <div class="row">
-                        <div class="col-12 load-more">
-                            <a class="btn" href="#">Load More</a>
-                        </div>
-                    </div> -->
-                </div>
+           <!-- Portfolio Start -->
+<section class="portfolio-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Projects</h2>
+        <p class="section-subtitle">Explore our latest projects and see our craftsmanship in action.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Portfolio Item 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-1.jpg" class="card-img-top" alt="Ooratchi Aluvulagam">
+            <div class="card-body">
+              <h5 class="card-title">Ooratchi Aluvulagam</h5>
+              <p class="card-text">
+                The Village Administration Office in Pillayarkulam, near Virudhunagar, Tamil Nadu serves as a hub for local government services and community gatherings.
+              </p>
+              <a href="img/portfolio-1.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
             </div>
-            <!-- Portfolio End -->
+          </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-2.jpg" class="card-img-top" alt="Anganwadi Center">
+            <div class="card-body">
+              <h5 class="card-title">Anganwadi Center</h5>
+              <p class="card-text">
+                Constructed in Appanur Chatrapatti, this center provides educational and healthcare facilities to lay the foundation for rural children’s growth.
+              </p>
+              <a href="img/portfolio-2.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-3.jpg" class="card-img-top" alt="Modern Concrete Structure">
+            <div class="card-body">
+              <h5 class="card-title">Modern Concrete Structure</h5>
+              <p class="card-text">
+                A reinforced concrete structure with clean lines, precise formwork, and carefully integrated window openings that highlight our expertise.
+              </p>
+              <a href="img/portfolio-3.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 4 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-4.jpg" class="card-img-top" alt="Reinforced Concrete Expertise">
+            <div class="card-body">
+              <h5 class="card-title">Reinforced Concrete Expertise</h5>
+              <p class="card-text">
+                This project demonstrates our proficiency in working with reinforced concrete, ensuring a solid and durable structure.
+              </p>
+              <a href="img/portfolio-4.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 5 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-5.jpg" class="card-img-top" alt="Residential Concrete Project">
+            <div class="card-body">
+              <h5 class="card-title">Residential Concrete Project</h5>
+              <p class="card-text">
+                A successful residential project featuring a robust concrete structure and well-defined window openings for a modern living space.
+              </p>
+              <a href="img/portfolio-5.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Item 6 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+          <div class="portfolio-item card border-0 shadow-sm">
+            <img src="img/portfolio-6.jpg" class="card-img-top" alt="Construction Progress">
+            <div class="card-body">
+              <h5 class="card-title">Construction Progress</h5>
+              <p class="card-text">
+                A snapshot of a building’s concrete framework nearing completion, featuring prominent window openings and a distinctive tower element.
+              </p>
+              <a href="img/portfolio-6.jpg" data-lightbox="portfolio" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio End -->
+  
+  
 
 
             <!-- Footer Start -->
@@ -272,7 +286,7 @@
                             <div class="footer-contact">
                                 <h2>Office Contact</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>Madurai</p>
-                                <p><i class="fa fa-phone-alt"></i>9944325858</p>
+                                <p><i class="fa fa-phone-alt"></i>8668112027</p>
                                 <p><i class="fa fa-envelope"></i>ARconstructions@gmail.com</p>
                                 <div class="footer-social">
                                     <a href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
@@ -296,10 +310,10 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Our Team</a>
-                                <a href="">Projects</a>
+                                <a href="">Home</a>
+                                <a href="/about.html">About Us</a>
+                                <a href="/contact.html">Contact Us</a>
+                                <a href="/portfolio.html">Projects</a>
                                
                             </div>
                         </div>
@@ -318,7 +332,7 @@
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="https://www.godivatech.com">Godiva Tech</a> All Rights Reserved.</p>
+                            <p>&copy; <a href="index.html">AR Dream Constructions</a> All Rights Reserved.</p>
                         </div>
                         
                         <div class="col-md-6">
@@ -347,5 +361,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+                 // Initialize AOS
+        AOS.init({
+          easing: 'ease-out-back',
+          duration: 1000,
+          once: true // Ensures the animation happens only once when it comes into view
+        });
+        </script>
     </body>
 </html>
