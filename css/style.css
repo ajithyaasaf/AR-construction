@@ -703,11 +703,11 @@ a:focus {
 }
 
 .feature .col-md-12 {
-  background: #030f27;
+  background: #112028;
 }
 
 .feature .col-md-12:nth-child(2n) {
-  color: #030f27;
+  color: #ffffff;
   background: #fdbe33;
 }
 
@@ -746,7 +746,7 @@ a:focus {
   height: 79px;
   top: -18px;
   left: -9px;
-  background: #030f27;
+  background: #112028;
   border-radius: 60px;
   z-index: 2;
 }
@@ -770,14 +770,14 @@ a:focus {
 
 .feature .feature-text h3 {
   margin: 0 0 10px 0;
-  color: #fdbe33;
+  color: #ffffff;
   font-size: 25px;
   font-weight: 600;
 }
 
 .feature .feature-text p {
   margin: 0;
-  color: #fdbe33;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
 }
@@ -785,7 +785,7 @@ a:focus {
 .feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
 .feature .col-md-12:nth-child(2n) h3,
 .feature .col-md-12:nth-child(2n) p {
-  color: #030f27;
+  color: #000000;
 }
 
 /*******************************/
@@ -2120,7 +2120,7 @@ a:focus {
 .contact {
   position: relative;
   padding: 80px 0;
-  background: linear-gradient(135deg, #fff 50%, #f26418 50%);
+  background: linear-gradient(135deg, #fff 50%, #fdbe33 50%);
 }
 
 .contact .container {
@@ -2419,13 +2419,125 @@ a:focus {
 }
 
 /* video css */
+/* Section Styling */
+.video-section {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  color: #000000;
+  text-align: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Background Circles */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px); /* Soft blur effect */
+  opacity: 0.3;
+  animation: float 10s infinite ease-in-out;
+}
+
+/* .bg-circle-1 {
+  width: 300px;
+  height: 300px;
+  background: rgb(233, 236, 21);
+  top: 20%;
+  left: 10%;
+}
+
+.bg-circle-2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(16, 29, 43, 0.5);
+  bottom: 10%;
+  right: 20%;
+} */
+
+.bg-circle-3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 204, 102, 0.5); /* Yellowish hue */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Background Line */
+.bg-line {
+  position: absolute;
+  width: 1px;
+  height: 150%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  top: -25%;
+  left: 50%;
+  transform: rotate(-30deg);
+  animation: moveLine 8s infinite linear;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes moveLine {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+  }
+  to {
+    transform: rotate(-30deg) translateY(100%);
+  }
+}
+
+/* Content Styling */
+.video-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.video-heading .subheading {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* Video Container */
 .video-container {
-  width: 60%; /* Adjust the width as needed */
-  max-width: 800px; /* Maximum width for larger screens */
+  width: 80%;
+  max-width: 800px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add a shadow for a unique look */
-  border-radius: 15px; /* Rounded corners */
-  overflow: hidden; /* Ensure the video stays within the rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .embed-responsive {
@@ -2455,7 +2567,29 @@ a:focus {
 video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire container */
+  object-fit: cover;
+}
+
+/* Hover Effect */
+.video-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-section h2 {
+    font-size: 28px;
+  }
+
+  .video-section .subheading {
+    font-size: 16px;
+  }
+
+  .video-container {
+    width: 90%;
+  }
 }
 
 /* timeline css */
