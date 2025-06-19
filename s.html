@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godiva Tech - Digital Business Cart</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Body Styling */
+    body {
+      background: #ffffff; /* White background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Cart Container */
+    .cart-container {
+      width: 90%;
+      max-width: 450px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border: 2px solid #000080;
+    }
+
+    /* Header Section */
+    .cart-header {
+      background: #000080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    /* Service List */
+    .service-list {
+      padding: 25px;
+    }
+
+    /* Service Item */
+    .service-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f8f9ff;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateX(10px);
+    }
+
+    /* Service Icon */
+    .service-icon {
+      width: 40px;
+      height: 40px;
+      background: #000080;
+      border-radius: 8px;
+      margin-right: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* Service Details */
+    .service-name {
+      color: #000080;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .service-description {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Add to Cart Button */
+    .add-to-cart-btn {
+      background: #000080;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .add-to-cart-btn:hover {
+      background: #001f3f;
+    }
+
+    /* Cart Summary Section */
+    .cart-summary {
+      padding: 20px;
+      background: #f8f9ff;
+      border-top: 1px solid #ddd;
+    }
+
+    .summary-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #000080;
+      margin-bottom: 10px;
+    }
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .summary-item span {
+      color: #000080;
+    }
+
+    .remove-btn {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background 0.3s ease;
+    }
+
+    .remove-btn:hover {
+      background: #b30000;
+    }
+
+    /* Checkout Section */
+    .checkout-section {
+      background: #000080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .checkout-section:hover {
+      background: #001f3f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Godiva Tech Digital Business Cart -->
+  <div class="cart-container">
+    <!-- Header -->
+    <div class="cart-header">
+      Godiva Tech Services
+    </div>
+
+    <!-- Service List -->
+    <div class="service-list">
+      <!-- Digital Marketing -->
+      <div class="service-item">
+        <div class="service-icon">📊</div>
+        <div class="service-details">
+          <div class="service-name">Digital Marketing</div>
+          <div class="service-description">Boost your online presence with targeted campaigns.</div>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('Digital Marketing')">Add</button>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="service-item">
+        <div class="service-icon">🎨</div>
+        <div class="service-details">
+          <div class="service-name">UI/UX Design</div>
+          <div class="service-description">Craft intuitive and user-friendly interfaces.</div>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('UI/UX Design')">Add</button>
+      </div>
+
+      <!-- Web & App Development -->
+      <div class="service-item">
+        <div class="service-icon">💻</div>
+        <div class="service-details">
+          <div class="service-name">Web & App Development</div>
+          <div class="service-description">Build scalable and robust applications.</div>
+        </div>
+        <button class="add-to-cart-btn" onclick="addToCart('Web & App Development')">Add</button>
+      </div>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <div class="summary-title">Your Cart</div>
+      <div id="cart-items"></div>
+    </div>
+
+    <!-- Checkout Section -->
+    <div class="checkout-section" onclick="checkout()">
+      Proceed to Checkout
+    </div>
+  </div>
+
+  <!-- JavaScript for Interactivity -->
+  <script>
+    const cart = [];
+
+    // Function to add services to the cart
+    function addToCart(serviceName) {
+      if (!cart.includes(serviceName)) {
+        cart.push(serviceName);
+        updateCart();
+        alert(`${serviceName} added to cart!`);
+      } else {
+        alert(`${serviceName} is already in your cart.`);
+      }
+    }
+
+    // Function to remove services from the cart
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    // Function to update the cart display
+    function updateCart() {
+      const cartItemsDiv = document.getElementById('cart-items');
+      cartItemsDiv.innerHTML = ''; // Clear previous items
+
+      if (cart.length === 0) {
+        cartItemsDiv.innerHTML = '<div style="color: #aaa;">Your cart is empty.</div>';
+      } else {
+        cart.forEach((item, index) => {
+          const itemDiv = document.createElement('div');
+          itemDiv.className = 'summary-item';
+          itemDiv.innerHTML = `
+            <span>${item}</span>
+            <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
+          `;
+          cartItemsDiv.appendChild(itemDiv);
+        });
+      }
+    }
+
+    // Function to simulate checkout
+    function checkout() {
+      if (cart.length === 0) {
+        alert("Your cart is empty. Please add services first.");
+      } else {
+        alert(`You have selected:\n${cart.join("\n")}\n\nThank you for choosing Godiva Tech!`);
+        cart.length = 0; // Clear the cart after checkout
+        updateCart();
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+<!--  -->
+
