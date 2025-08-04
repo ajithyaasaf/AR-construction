@@ -29,7 +29,6 @@
     />
     <link rel="manifest" href="/img/site.webmanifest" />
 
-
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -58,71 +57,23 @@
 
   <body>
     <div class="wrapper">
-      <!-- Top Bar Start -->
       <div class="top-bar">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-lg-4 col-md-12">
               <div class="logo">
-                <a href="index.html">
-                  <h1></h1>
-                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-7 d-none d-lg-block">
-              <div class="row">
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-calendar"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Opening Hour</h3>
-                      <p>Mon - Fri, 8:00 - 9:00</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-call"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Call Us</h3>
-                      <p>+012 345 6789</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-send-mail"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Email Us</h3>
-                      <p>info@example.com</p>
-                    </div>
-                  </div>
-                </div>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Top Bar End -->
-
-      <!-- Nav Bar Start -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <div class="logo-wrapper">
-              <img src="img/logo.png" alt="Logo" />
-            </div>
-          </a>
-
-          <!-- Hamburger Menu -->
+          <a class="navbar-brand" href="#"
+            ><div class="logo-wrapper">
+              <img src="img/logo.png" alt="Logo" /></div
+          ></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -134,8 +85,6 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- Navbar Links -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -157,121 +106,132 @@
           </div>
         </div>
       </nav>
-      <!-- Nav Bar End -->
-
-      <!-- Page Header Start -->
-      <!--  <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Contact Us</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-      <!-- Page Header End -->
-
-      <!-- Contact Start -->
-      <div class="contact wow fadeInUp">
+      <div class="page-header-refined">
         <div class="container">
-          <div class="section-header text-center">
-            <p>Get In Touch</p>
-            <h2>For Any Query</h2>
-          </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="contact-info">
-                <div class="contact-item">
-                  <i class="flaticon-address"></i>
-                  <div class="contact-text">
-                    <h2>Location</h2>
-                    <p>Madurai</p>
-                  </div>
-                </div>
-                <div class="contact-item">
-                  <i class="flaticon-call"></i>
-                  <div class="contact-text">
-                    <h2>Phone</h2>
-                    <p>+8668112027</p>
-                  </div>
-                </div>
-                <div class="contact-item">
-                  <i class="flaticon-send-mail"></i>
-                  <div class="contact-text">
-                    <h2>Email</h2>
-                    <p class="text-break">arconstructions@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="contact-form">
-                <div id="success"></div>
-                <form
-                  name="sentMessage"
-                  id="contactForm"
-                  novalidate="novalidate"
-                >
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required="required"
-                      data-validation-required-message="Please enter your name"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                      required="required"
-                      data-validation-required-message="Please enter your email"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                      required="required"
-                      data-validation-required-message="Please enter a subject"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="Message"
-                      required="required"
-                      data-validation-required-message="Please enter your message"
-                    ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="text-center">
-                    <button class="btn" type="submit" id="sendMessageButton">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-              </div>
+            <div class="col-12">
+              <h1>Get in Touch</h1>
+              <p>
+                We're here to answer your questions and help you start your next
+                project.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Contact End -->
-      <!-- Footer Start -->
+      <section class="contact-page-wrapper">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info-panel">
+              <div class="section-header-editorial">
+                <p>Contact Information</p>
+                <h2>Let's Start a Conversation</h2>
+              </div>
+              <p class="contact-intro">
+                Whether you have a specific project in mind or just a
+                preliminary question, our team is ready to help. Reach out to us
+                via phone, email, or visit our office in Madurai.
+              </p>
+
+              <div class="info-blocks">
+                <div class="info-block">
+                  <div class="info-icon">
+                    <i class="fa fa-map-marker-alt"></i>
+                  </div>
+                  <div class="info-text">
+                    <h3>Our Office</h3>
+                    <p>123 Anna Nagar, Madurai, Tamil Nadu 625020</p>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info-icon">
+                    <i class="fa fa-envelope-open-text"></i>
+                  </div>
+                  <div class="info-text">
+                    <h3>Email Us</h3>
+                    <p>arconstructions@gmail.com</p>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info-icon"><i class="fa fa-phone-alt"></i></div>
+                  <div class="info-text">
+                    <h3>Call Us</h3>
+                    <p>+91 86681 12027</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required="required"
+                    data-validation-required-message="Please enter your name"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required="required"
+                    data-validation-required-message="Please enter your email"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Subject"
+                    required="required"
+                    data-validation-required-message="Please enter a subject"
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Message"
+                    required="required"
+                    data-validation-required-message="Please enter your message"
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-executive"
+                    type="submit"
+                    id="sendMessageButton"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map-section-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125762.3385412402!2d78.0406450950346!3d9.91782686893693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0xdc955b7264f63933!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1691090000000!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
       <div class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container">
           <div class="row">
@@ -288,20 +248,19 @@
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Services Areas</h2>
-                <a href="">Apartment Development</a>
-                <a href="">Commercial Development</a>
-                <a href="">Industrial Development</a>
-                <a href="">Individual Villa Development</a>
-                <a href="">Joint Venture Development</a>
+                <a href="">Apartment Development</a
+                ><a href="">Commercial Development</a
+                ><a href="">Industrial Development</a
+                ><a href="">Individual Villa Development</a
+                ><a href="">Joint Venture Development</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Useful Pages</h2>
-                <a href="">Home</a>
-                <a href="/about.html">About Us</a>
-                <a href="/contact.html">Contact Us</a>
-                <a href="/portfolio.html">Projects</a>
+                <a href="">Home</a><a href="/about.html">About Us</a
+                ><a href="/contact.html">Contact Us</a
+                ><a href="/portfolio.html">Projects</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
@@ -311,15 +270,13 @@
                 <p><i class="fa fa-phone-alt"></i>8668112027</p>
                 <p><i class="fa fa-envelope"></i>arconstructions@gmail.com</p>
                 <div class="footer-social">
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <!-- <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a> -->
+                  <a href=""><i class="fab fa-facebook-f"></i></a
+                  ><a href=""><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="container copyright">
           <div class="row">
             <div class="col-md-6">
@@ -328,7 +285,6 @@
                 Rights Reserved.
               </p>
             </div>
-
             <div class="col-md-6">
               <p>
                 Designed and Developed By
@@ -338,13 +294,9 @@
           </div>
         </div>
       </div>
-
-      <!-- Footer End -->
-
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -355,12 +307,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
-
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>

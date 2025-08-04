@@ -102,71 +102,23 @@
 
   <body>
     <div class="wrapper">
-      <!-- Top Bar Start -->
       <div class="top-bar">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-lg-4 col-md-12">
               <div class="logo">
-                <a href="index.html">
-                  <h1></h1>
-                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-7 d-none d-lg-block">
-              <div class="row">
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-calendar"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Opening Hour</h3>
-                      <p>Mon - Fri, 8:00 - 9:00</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-call"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Call Us</h3>
-                      <p>+012 345 6789</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="top-bar-item">
-                    <div class="top-bar-icon">
-                      <i class="flaticon-send-mail"></i>
-                    </div>
-                    <div class="top-bar-text">
-                      <h3>Email Us</h3>
-                      <p>info@example.com</p>
-                    </div>
-                  </div>
-                </div>
+                <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Top Bar End -->
-
-      <!-- Nav Bar Start -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <div class="logo-wrapper">
-              <img src="img/logo.png" alt="Logo" />
-            </div>
-          </a>
-
-          <!-- Hamburger Menu -->
+          <a class="navbar-brand" href="#"
+            ><div class="logo-wrapper">
+              <img src="img/logo.png" alt="Logo" /></div
+          ></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -178,8 +130,6 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- Navbar Links -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -201,202 +151,146 @@
           </div>
         </div>
       </nav>
-      <!-- Nav Bar End -->
 
-      <!-- Page Header Start -->
-      <!-- <div class="page-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2>Our Projects</h2>
-                        </div>
-                        <div class="col-12">
-                            <a href="">Home</a>
-                            <a href="">Our Projects</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-      <!-- Page Header End -->
-
-      <!-- Portfolio Start -->
-      <section class="portfolio-section py-5">
+      <div class="page-header-refined">
         <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="section-title">Our Projects</h2>
-            <p class="section-subtitle">
-              Explore our latest projects and see our craftsmanship in action.
-            </p>
+          <div class="row">
+            <div class="col-12">
+              <h1>Our Portfolio</h1>
+              <p>
+                A showcase of our commitment to quality and craftsmanship across
+                Tamil Nadu.
+              </p>
+            </div>
           </div>
-          <div class="row g-4">
-            <!-- Portfolio Item 1 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
-                <img
-                  src="img/portfolio-1.jpg"
-                  class="card-img-top"
-                  alt="Ooratchi Aluvulagam"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Ooratchi Aluvulagam</h5>
-                  <p class="card-text">
-                    The Village Administration Office in Pillayarkulam, near
-                    Virudhunagar, Tamil Nadu serves as a hub for local
-                    government services and community gatherings.
-                  </p>
+        </div>
+      </div>
+
+      <section class="portfolio-page-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="portfolio-filter-menu">
+                <li class="filter-btn active" data-filter="*">All</li>
+                <li class="filter-btn" data-filter=".residential">
+                  Residential
+                </li>
+                <li class="filter-btn" data-filter=".commercial">Commercial</li>
+                <li class="filter-btn" data-filter=".government">
+                  Government & Community
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item government">
+              <div class="portfolio-card">
+                <img src="img/portfolio-1.jpg" alt="Ooratchi Aluvulagam" />
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Ooratchi Aluvulagam</h3>
+                    <span>Pillayarkulam, Virudhunagar</span>
+                  </div>
                   <a
                     href="img/portfolio-1.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item 2 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
-                <img
-                  src="img/portfolio-2.jpg"
-                  class="card-img-top"
-                  alt="Anganwadi Center"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Anganwadi Center</h5>
-                  <p class="card-text">
-                    Constructed in Appanur Chatrapatti, this center provides
-                    educational and healthcare facilities to lay the foundation
-                    for rural children’s growth.
-                  </p>
+            <div class="portfolio-item government">
+              <div class="portfolio-card">
+                <img src="img/portfolio-2.jpg" alt="Anganwadi Center" />
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Anganwadi Center</h3>
+                    <span>Appanur Chatrapatti</span>
+                  </div>
                   <a
                     href="img/portfolio-2.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item 3 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
+            <div class="portfolio-item residential">
+              <div class="portfolio-card">
                 <img
                   src="img/portfolio-3.jpg"
-                  class="card-img-top"
                   alt="Modern Concrete Structure"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Modern Concrete Structure</h5>
-                  <p class="card-text">
-                    A reinforced concrete structure with clean lines, precise
-                    formwork, and carefully integrated window openings that
-                    highlight our expertise.
-                  </p>
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Modern Residential Home</h3>
+                    <span>Madurai</span>
+                  </div>
                   <a
                     href="img/portfolio-3.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item 4 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
+            <div class="portfolio-item commercial">
+              <div class="portfolio-card">
                 <img
                   src="img/portfolio-4.jpg"
-                  class="card-img-top"
                   alt="Reinforced Concrete Expertise"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Reinforced Concrete Expertise</h5>
-                  <p class="card-text">
-                    This project demonstrates our proficiency in working with
-                    reinforced concrete, ensuring a solid and durable structure.
-                  </p>
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Commercial Structure</h3>
+                    <span>Virudhunagar</span>
+                  </div>
                   <a
                     href="img/portfolio-4.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item 5 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="800"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
+            <div class="portfolio-item residential">
+              <div class="portfolio-card">
                 <img
                   src="img/portfolio-5.jpg"
-                  class="card-img-top"
                   alt="Residential Concrete Project"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Residential Concrete Project</h5>
-                  <p class="card-text">
-                    A successful residential project featuring a robust concrete
-                    structure and well-defined window openings for a modern
-                    living space.
-                  </p>
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Villa Construction</h3>
+                    <span>Madurai</span>
+                  </div>
                   <a
                     href="img/portfolio-5.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
             </div>
-            <!-- Portfolio Item 6 -->
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <div class="portfolio-item card border-0 shadow-sm">
-                <img
-                  src="img/portfolio-6.jpg"
-                  class="card-img-top"
-                  alt="Construction Progress"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Construction Progress</h5>
-                  <p class="card-text">
-                    A snapshot of a building’s concrete framework nearing
-                    completion, featuring prominent window openings and a
-                    distinctive tower element.
-                  </p>
+            <div class="portfolio-item commercial">
+              <div class="portfolio-card">
+                <img src="img/portfolio-6.jpg" alt="Construction Progress" />
+                <div class="portfolio-card-overlay">
+                  <div class="portfolio-card-text">
+                    <h3>Commercial Tower</h3>
+                    <span>Tirunelveli</span>
+                  </div>
                   <a
                     href="img/portfolio-6.jpg"
                     data-lightbox="portfolio"
-                    class="btn btn-primary"
-                    >View Project</a
+                    class="view-btn"
+                    >+</a
                   >
                 </div>
               </div>
@@ -404,9 +298,32 @@
           </div>
         </div>
       </section>
-      <!-- Portfolio End -->
 
-      <!-- Footer Start -->
+      <section class="testimonial-section-wrapper">
+        <div class="container">
+          <div class="testimonial-content">
+            <p>
+              "Working with AR Dream Construction was a seamless experience.
+              Their attention to detail and dedication to quality were evident
+              in our new commercial space in Virudhunagar. They are true
+              professionals."
+            </p>
+            <span class="testimonial-author">- S. Kumar, Business Owner</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section-wrapper">
+        <div class="container text-center">
+          <h2>Have a Project in Mind?</h2>
+          <p>
+            Let's discuss how we can bring our expertise to your next
+            construction project.
+          </p>
+          <a href="contact.html" class="btn btn-cta">Request a Consultation</a>
+        </div>
+      </section>
+
       <div class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container">
           <div class="row">
@@ -423,20 +340,19 @@
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Services Areas</h2>
-                <a href="">Apartment Development</a>
-                <a href="">Commercial Development</a>
-                <a href="">Industrial Development</a>
-                <a href="">Individual Villa Development</a>
-                <a href="">Joint Venture Development</a>
+                <a href="">Apartment Development</a
+                ><a href="">Commercial Development</a
+                ><a href="">Industrial Development</a
+                ><a href="">Individual Villa Development</a
+                ><a href="">Joint Venture Development</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Useful Pages</h2>
-                <a href="">Home</a>
-                <a href="/about.html">About Us</a>
-                <a href="/contact.html">Contact Us</a>
-                <a href="/portfolio.html">Projects</a>
+                <a href="">Home</a><a href="/about.html">About Us</a
+                ><a href="/contact.html">Contact Us</a
+                ><a href="/portfolio.html">Projects</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
@@ -446,24 +362,21 @@
                 <p><i class="fa fa-phone-alt"></i>8668112027</p>
                 <p><i class="fa fa-envelope"></i>arconstructions@gmail.com</p>
                 <div class="footer-social">
-                  <a href=""><i class="fab fa-facebook-f"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <!-- <a href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a> -->
+                  <a href=""><i class="fab fa-facebook-f"></i></a
+                  ><a href=""><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="container copyright">
           <div class="row">
             <div class="col-md-6">
               <p>
-                &copy; <a href="/index.html">AR Dream Constructions</a> All
-                Rights Reserved.
+                © <a href="/index.html">AR Dream Constructions</a> All Rights
+                Reserved.
               </p>
             </div>
-
             <div class="col-md-6">
               <p>
                 Designed and Developed By
@@ -474,12 +387,9 @@
         </div>
       </div>
 
-      <!-- Footer End -->
-
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -491,15 +401,19 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-      // Initialize AOS
-      AOS.init({
-        easing: "ease-out-back",
-        duration: 1000,
-        once: true, // Ensures the animation happens only once when it comes into view
+      $(document).ready(function () {
+        var $grid = $(".portfolio-grid").isotope({
+          itemSelector: ".portfolio-item",
+          layoutMode: "fitRows",
+        });
+        $(".portfolio-filter-menu").on("click", "li", function () {
+          var filterValue = $(this).attr("data-filter");
+          $grid.isotope({ filter: filterValue });
+          $(".portfolio-filter-menu li").removeClass("active");
+          $(this).addClass("active");
+        });
       });
     </script>
   </body>

@@ -6,7 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Construction Company Website Template" name="keywords" />
     <meta content="Construction Company Website Template" name="description" />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
     <!-- Favicon -->
@@ -159,17 +162,36 @@
 
       <!-- Carousel Start -->
       <!-- Your Carousel HTML code -->
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carousel-1.jpg" alt="Carousel Image" />
-            <!-- No overlay, no text, no button -->
+      <section class="hero-refined-wrapper">
+        <div class="container hero-refined-grid">
+          <div class="hero-text-content wow fadeInLeft" data-wow-delay="0.1s">
+            <h1 class="hero-headline">
+              Building Trust,<br />One
+              <span class="text-accent">Landmark</span> at a Time.
+            </h1>
+            <p class="hero-subheadline">
+              Based in Madurai, AR Dream Construction is synonymous with
+              integrity and master craftsmanship. We translate your vision into
+              enduring structures that define quality.
+            </p>
+            <a href="portfolio.html" class="btn btn-executive"
+              >Explore Our Work</a
+            >
+          </div>
+
+          <div class="hero-image-content wow fadeInRight" data-wow-delay="0.3s">
+            <div class="image-frame">
+              <img
+                src="../img/carousel-1.jpg"
+                alt="A signature construction project in Madurai by AR Constructions"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Modal for the Enquiry Form -->
-      <div
+      <!-- <div
         class="modal fade"
         id="enquiryModal"
         tabindex="-1"
@@ -191,7 +213,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <!-- Enquiry Form Start -->
+             Enquiry Form Start 
               <form id="enquiryForm" action="send_email.php" method="POST">
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -228,84 +250,30 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Modal end -->
       <!-- Carousel End -->
-      <!-- Feature Start-->
-      <div class="feature wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="flaticon-worker"></i>
-                </div>
-                <div class="feature-text">
-                  <h3>Expert Worker</h3>
-                  <p>
-                    Skilled professionals delivering high-quality and efficient
-                    results for every project.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="flaticon-building"></i>
-                </div>
-                <div class="feature-text">
-                  <h3>Quality Work</h3>
-                  <p>
-                    Delivering exceptional craftsmanship with attention to
-                    detail in every project.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="flaticon-call"></i>
-                </div>
-                <div class="feature-text">
-                  <h3>24/7 Support</h3>
-                  <p>
-                    Always available to assist you, anytime, anywhere, for any
-                    query or issue.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Feature End-->
 
       <!-- About Start -->
-      <div class="about wow fadeInUp" data-wow-delay="0.1s">
+      <section class="about-editorial-wrapper">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6">
-              <div class="about-img">
-                <img src="img/about.jpg" alt="Image" />
+          <div class="about-editorial-grid">
+            <div
+              class="about-editorial-text wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <div class="section-header-editorial">
+                <p>Welcome to AR Dream Construction</p>
+                <h2>Crafting Landmarks, Building Trust</h2>
               </div>
-            </div>
-            <div class="col-lg-7 col-md-6">
-              <div class="section-header text-left">
-                <p>Welcome to AR Constructions</p>
-                <h2>8 Years of Excellence</h2>
-              </div>
-              <div class="about-text">
+
+              <div class="story-content">
                 <p>
-                  <strong>Welcome to AR DREAM CONSTRUCTION</strong><br />
-                  <em>“Crafting Landmarks. Building Trust.”</em>
-                </p>
-                <p>
-                  With over 20 years of experience in the construction industry,
-                  AR DREAM CONSTRUCTION was founded by a former Project Manager
-                  of top multinational construction companies. Our legacy is
-                  built on a foundation of integrity, precision, and hands-on
+                  <span class="drop-cap">W</span>ith over two decades of
+                  leadership experience in the construction industry, AR Dream
+                  Construction was founded by a former Project Manager of top
+                  multinational construction companies. Our legacy is built on
+                  an unwavering foundation of integrity, precision, and hands-on
                   expertise.
                 </p>
                 <p>
@@ -314,151 +282,198 @@
                   tailored to our clients' unique needs. Whether it’s a dream
                   home, a thriving workspace, or an efficient industrial
                   facility, we approach every project with passion,
-                  transparency, and a commitment to excellence.
+                  transparency, and a steadfast commitment to excellence.
                 </p>
                 <p>
-                  At AR DREAM CONSTRUCTION, we don't just build — we shape your
+                  At AR Dream Construction, we don't just build — we shape your
                   vision into reality, creating spaces that inspire and endure.
+                  Let’s build your future, together.
                 </p>
-                <p>Let’s build your future, together.</p>
-                <a class="btn" href="">Discover More</a>
               </div>
+
+              <div class="stats-bar">
+                <div class="stat-item">
+                  <h3>8+</h3>
+                  <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item">
+                  <h3>20+</h3>
+                  <p>Years of Founder's Experience</p>
+                </div>
+                <div class="stat-item">
+                  <h3>100%</h3>
+                  <p>Commitment to Quality</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-editorial-image wow fadeIn" data-wow-delay="0.3s">
+              <img
+                src="img/about.jpg"
+                alt="The dedicated team at AR Dream Construction"
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- About End -->
 
-      <!-- Fact Start -->
-      <div class="fact">
-        <div class="container-fluid">
-          <div class="row counters">
-            <div class="col-md-6 fact-left wow slideInLeft">
-              <div class="row">
-                <div class="col-6">
-                  <div class="fact-icon">
-                    <i class="flaticon-worker"></i>
-                  </div>
-                  <div class="fact-text">
-                    <h2 data-toggle="counter-up">109</h2>
-                    <p>Expert Workers</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="fact-icon">
-                    <i class="flaticon-building"></i>
-                  </div>
-                  <div class="fact-text">
-                    <h2 data-toggle="counter-up">170</h2>
-                    <p>Happy Clients</p>
-                  </div>
-                </div>
-              </div>
+      <!-- Feature Start-->
+      <section class="principles-section-wrapper">
+        <div class="container">
+          <div class="section-header-center wow fadeInUp" data-wow-delay="0.1s">
+            <p>Our Foundation</p>
+            <h2>The Pillars of Our Promise</h2>
+          </div>
+
+          <div class="principles-grid">
+            <div class="principle-card wow fadeInUp" data-wow-delay="0.2s">
+              <span class="card-bg-number">01</span>
+              <h3>Expert Craftsmanship</h3>
+              <p>
+                Our team consists of skilled professionals dedicated to
+                delivering high-quality, efficient results on every project.
+              </p>
             </div>
-            <div class="col-md-6 fact-right wow slideInRight">
-              <div class="row">
-                <div class="col-6">
-                  <div class="fact-icon">
-                    <i class="flaticon-address"></i>
-                  </div>
-                  <div class="fact-text">
-                    <h2 data-toggle="counter-up">200</h2>
-                    <p>Completed Projects</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="fact-icon">
-                    <i class="flaticon-crane"></i>
-                  </div>
-                  <div class="fact-text">
-                    <h2 data-toggle="counter-up">50</h2>
-                    <p>Running Project</p>
-                  </div>
-                </div>
-              </div>
+
+            <div class="principle-card wow fadeInUp" data-wow-delay="0.3s">
+              <span class="card-bg-number">02</span>
+              <h3>Uncompromising Quality</h3>
+              <p>
+                We deliver exceptional work with an unwavering attention to
+                detail, ensuring every project is built to last.
+              </p>
+            </div>
+
+            <div class="principle-card wow fadeInUp" data-wow-delay="0.4s">
+              <span class="card-bg-number">03</span>
+              <h3>Dedicated Support</h3>
+              <p>
+                We are always available to assist you with clear communication
+                and responsive service, anytime you need us.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- Feature End-->
+
+      <!-- Fact Start -->
+      <section class="impact-section-wrapper wow fadeIn">
+        <div class="impact-overlay"></div>
+        <div class="container">
+          <div class="impact-grid">
+            <div class="impact-item">
+              <h2 data-toggle="counter-up">40</h2>
+              <p>Expert Workers</p>
+            </div>
+
+            <div class="impact-item">
+              <h2 data-toggle="counter-up">150</h2>
+              <p>Happy Clients</p>
+            </div>
+
+            <div class="impact-item">
+              <h2 data-toggle="counter-up">200</h2>
+              <p>Completed Projects</p>
+            </div>
+
+            <div class="impact-item">
+              <h2 data-toggle="counter-up">30</h2>
+              <p>Running Projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Fact End -->
 
       <!-- Service Start -->
-      <div class="service">
+      <section class="services-section-wrapper">
         <div class="container">
-          <div class="section-header text-center">
-            <p>Our Services</p>
-            <h2>We Provide Services</h2>
+          <div class="section-header-center">
+            <p>Our Expertise</p>
+            <h2>Comprehensive Building Solutions</h2>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item">
-                <div class="service-img">
-                  <img src="img/service-1.jpg" alt="Image" />
-                  <div class="service-overlay">
-                    <p>
-                      Expert solutions for apartment development, from planning
-                      to construction, ensuring high-quality living spaces.
-                    </p>
-                  </div>
-                </div>
-                <div class="service-text">
-                  <h3>Apartment Development</h3>
-                  <a
-                    class="btn"
-                    href="img/service-1.jpg"
-                    data-lightbox="service"
-                    >+</a
-                  >
-                </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-card-image">
+                <img
+                  src="img/service-1.jpg"
+                  alt="Modern Apartment Development"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Apartment Development</h3>
+                <p>
+                  Expert solutions for multi-unit residential projects, from
+                  initial planning to final construction.
+                </p>
+                <a href="service.html" class="service-link"
+                  >Learn More <i class="fas fa-arrow-right"></i
+                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="service-item">
-                <div class="service-img">
-                  <img src="img/service-2.jpg" alt="Image" />
-                  <div class="service-overlay">
-                    <p>
-                      Building modern and sustainable commercial spaces designed
-                      for business growth and innovation.
-                    </p>
-                  </div>
-                </div>
-                <div class="service-text">
-                  <h3>Commercial Development</h3>
-                  <a
-                    class="btn"
-                    href="img/service-2.jpg"
-                    data-lightbox="service"
-                    >+</a
-                  >
-                </div>
+
+            <div class="service-card">
+              <div class="service-card-image">
+                <img
+                  src="img/service-2.jpg"
+                  alt="Professional Commercial Development"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Commercial Development</h3>
+                <p>
+                  Building modern and sustainable commercial spaces designed for
+                  business growth and innovation.
+                </p>
+                <a href="service.html" class="service-link"
+                  >Learn More <i class="fas fa-arrow-right"></i
+                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item">
-                <div class="service-img">
-                  <img src="img/service-3.jpg" alt="Image" />
-                  <div class="service-overlay">
-                    <p>
-                      Developing high-performance industrial facilities to boost
-                      productivity and efficiency.
-                    </p>
-                  </div>
-                </div>
-                <div class="service-text">
-                  <h3>Industrial Development</h3>
-                  <a
-                    class="btn"
-                    href="img/service-3.jpg"
-                    data-lightbox="service"
-                    >+</a
-                  >
-                </div>
+
+            <div class="service-card">
+              <div class="service-card-image">
+                <img
+                  src="img/service-3.jpg"
+                  alt="Efficient Industrial Development"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Industrial Development</h3>
+                <p>
+                  Developing high-performance industrial facilities to boost
+                  productivity and operational efficiency.
+                </p>
+                <a href="service.html" class="service-link"
+                  >Learn More <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card-image">
+                <img
+                  src="img/service-4.jpg"
+                  alt="Custom Individual Villa Development"
+                />
+              </div>
+              <div class="service-card-content">
+                <h3>Individual Villas</h3>
+                <p>
+                  Crafting bespoke, high-end individual homes with a focus on
+                  luxury, comfort, and personal style.
+                </p>
+                <a href="service.html" class="service-link"
+                  >Learn More <i class="fas fa-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Service End -->
 
       <!-- Video Start -->
