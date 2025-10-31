@@ -1,0 +1,42 @@
+in the home section page we have about section part after that we need to add one section where client wants me to mention about himself and his achievements 
+
+
+with his photo his photo is in the img folder in the name person.jpeg
+
+he content to mention
+
+
+[Your Name] - Founder & CEO
+[Your Name] is the Founder and CEO of [Your Company Name]. He brings [Your Years of Experience]+ years of construction expertise, gained through successful project management roles at major MNCs, directly to his company.
+Key Project Management Experience (MNC Contractor Level):
+His portfolio highlights his capability to manage high-value and technically complex projects, ensuring international quality standards.
+●	Mantri - Espana: Managed the construction and delivery of a major G+14 residential apartment project.
+●	Puravankara - Tivoli Hills: Successfully led the development of a 60-acre high-end land and infrastructure project.
+●	L&T (L&W) - KIA Car Factory: Oversaw diverse industrial facilities, including the Waste Water Treatment Plant, Assembly Shop, and staff accommodations.
+●	L&T (L&W) - Wistron (OEM Apple iPhone): Expert in executing high-specification, fast-track industrial construction for advanced technology manufacturing.
+Commitment:
+[Your Company Name] is built on the foundation of MNC-level quality, professionalism, and timely delivery, ensuring every client receives reliable and superior construction solutions
+
+
+in place holder you can fill contetn by refereing other parts of the site you get the answer
+
+
+next he give  some images to attach like where he worked kind of that 
+
+beautifully we also need to integrate this 
+
+project one
+L&W Wistron project (Taiwan client) ground breaking ceremony
+
+two
+KIA Projects team
+there is two images for this
+
+three
+L&W Kia projects meeting with korean client
+
+four
+28 KIA Assembly shop project
+
+five
+Current on going projects
