@@ -900,7 +900,7 @@ a:focus {
 /* This is the key to the new reading experience */
 .story-content {
   color: #343a40; /* A dark gray is easier on the eyes than pure black */
-  font-family: "Lora", serif; /* Using the new serif font */
+  font-family: "Poppins", sans-serif; /* Unified site-wide font */
   font-size: 1.1rem;
   line-height: 1.9; /* Generous line spacing for readability */
 }
@@ -2333,7 +2333,7 @@ a:focus {
   margin-bottom: 1.5rem;
 }
 .testimonial-content p {
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.8;
@@ -3544,7 +3544,7 @@ About page part2
 }
 .faq-accordion .card-body {
   padding: 1.5rem;
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   color: #343a40;
